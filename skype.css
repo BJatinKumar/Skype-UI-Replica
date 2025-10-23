@@ -1,0 +1,231 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+    margin-top: 0;
+}
+body {
+    font-family: 'Roboto Flex', sans-serif;
+
+}
+
+.right-scroll {
+    align-items: center;
+    margin-left: 1vw;
+}
+.left-section,
+.middle-section,
+.right-section,
+.nav-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+svg {
+    margin-right:1vw;
+}
+img {
+    height: 25px;
+}
+
+.nav-bar {
+    margin-left:5vw;
+}
+
+.Skype {
+    margin-left: 0.25vw;
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -3px;
+}
+.left-section {
+margin-left: 3%;
+font-weight: 500;
+color: rgb(29, 180, 160);
+font-size: 20px;
+}
+
+.middle-section{
+    margin-right: 10vw;
+    font-size: 0.90em;
+    font-weight: 400;
+    color: grey;
+}
+.right-section{
+    font-size: 0.90em;
+    font-weight: 300;
+    margin-left: 15%;
+    font-weight: 400;
+    color: grey;
+}
+.nav-tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-items: center;
+    margin-right: 1vw;
+    justify-content: space-evenly;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.15s ease;
+}
+
+.nav-tool:hover {
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+.text {
+ max-width: 30vw;
+ margin-left: 7.5%;
+ margin-top: 4%;
+ display: inline-block;
+}
+
+.grad {
+        
+        background-image: linear-gradient(90deg, #0078d4, #c218ec);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text; /* Apply the gradient only to the text content */
+        color: transparent;
+}
+    
+.info {
+max-width: 25vw;
+color: rgb(124, 124, 124);
+font-weight: 200;
+font-size: 1em;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+.download {
+    background-color: #0078ca;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid whitesmoke;
+    padding: 1vh 1vw;
+    border-radius: 30px;
+}
+
+.download:hover {
+    transform: scaleX(1.25);
+    cursor: pointer;
+    background-color: black;
+}
+
+a {
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    color: black;
+}
+.img-holder {
+    display: inline-block;
+    max-width: 40vw;
+    margin-top: 5%;
+    margin-left: 10%;
+   
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: rgb(237, 237, 237);
+    padding-bottom: 10vh;
+    border-radius: 2em;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    box-shadow: 15px 15px 20px rgba(64, 64, 66, 0.3);
+
+}
+
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Create a flex container for the page content */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+}
+
+/* Style for the footer */
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Additional styling for the footer text */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width:1066px) {
+    img {
+        display: none;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        place-items: center;
+    }
+
+    .left-section,
+  .middle-section,
+  .right-section {
+      border-top: 1px solid rgb(14, 159, 192);
+      padding: 10px;
+  }
+
+  .right-section {
+    transform: translateX(-4em);
+  }
+  .middle-section{
+    transform: translateX(2em);
+  }
+  .container {
+    margin-top: 8%;
+  }
+  
+  
+
+}
+
+@media (max-width: 400px) {
+    .header {
+        font-size: 0.5em;
+        padding: 0.5em;
+    }
+
+    .container{
+        margin-top: 12%;
+    }
+
+
+}
